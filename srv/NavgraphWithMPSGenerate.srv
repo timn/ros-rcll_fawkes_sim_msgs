@@ -1,0 +1,17 @@
+# Generate a new navgraph, the graph is implicitly cleared
+# and computed.
+
+# The known MPS stations so far referenced by detected tags.
+NavgraphMPSStation[] mps_stations
+
+# The zones for which to keep copying the exploration points.
+# Numbered from 1..24.
+int8[] exploration_zones
+
+# The zones to designate as waiting zones. Numbered from 1..24.
+int8[] wait_zones
+---
+# Whether generation was successful (true) or failed
+bool ok
+# An error message in case of an error
+string error_msg
