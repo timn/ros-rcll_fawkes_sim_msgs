@@ -7,6 +7,7 @@ project(rcll_fawkes_sim_msgs)
 find_package(catkin REQUIRED COMPONENTS
 	message_generation
   geometry_msgs
+  sensor_msgs
 	fawkes_msgs
 )
 
@@ -70,6 +71,7 @@ add_service_files(
 generate_messages(
   DEPENDENCIES
     geometry_msgs
+    sensor_msgs
 	  fawkes_msgs
 )
 
